@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aura Mode | Bookings</title>
+    <title>Aura Mode | VIP Booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav><a href="index.html">Home</a> <a href="products.html">Products</a> <a href="trustees.html">Trustees</a> <a href="appointments.html">Appointments</a> <a href="events.html">Events</a></nav>
-    <div class="marquee"><span>BOOK A PRIVATE CONSULTATION</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="trustees.html">Trustees</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="events.html">Events</a>
+    </nav>
+    <div class="marquee"><span>✨ SECURE YOUR PRIVATE FITTING | LIMITED SLOTS AVAILABLE FOR SPRING ✨</span></div>
 
-    <div class="container">
-        <h2>Book Appointment</h2>
-        <!-- Form code remains same -->
-        <div class="page-nav">
-            <a href="trustees.html" class="nav-btn">← Back: Trustees</a>
-            <a href="events.html" class="nav-btn">Next: Events →</a>
+    <section class="booking-section">
+        <div class="glass-form">
+            <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 30px;">Reserve Your Experience</h2>
+            <form id="luxuryForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="" disabled selected>Select Your Service</option>
+                    <option>Couture Consultation</option>
+                    <option>Personal Styling Session</option>
+                    <option>Bridal Fitting</option>
+                </select>
+                <input type="date" required>
+                <textarea placeholder="Special Requests or Measurements" rows="4"></textarea>
+                <button type="submit" class="btn-gold" style="width: 100%;">Confirm Request</button>
+            </form>
         </div>
+    </section>
+     <!-- Stylish Navigation -->
+    <div class="page-nav">
+        <a href="trustees.html" class="nav-btn">← Back: Visionaries</a>
+        <a href="events.html" class="nav-btn">Next: Events →</a>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+
+
